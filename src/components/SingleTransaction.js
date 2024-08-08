@@ -1,6 +1,6 @@
 import React from "react";
 
-function SingleTransaction({ transaction }) {
+function SingleTransaction({transaction ,onDelete}) {
 
   return (
 
