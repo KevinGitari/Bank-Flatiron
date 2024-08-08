@@ -5,7 +5,7 @@ function TransactionList() {
   const [transactionList, setTransactionList] = useState([]);
 
   useEffect(() => {
-    fetch("http://json-server-in.vercel.app/transactions")
+    fetch("http://student-back-end-three.vercel.app/transactions")
        method: 'POST',
       headers: {
         'Content-Type': 'application/json',
