@@ -5,7 +5,7 @@ function TransactionList() {
   const [transactionList, setTransactionList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/transactions")
+    fetch("http://json-server-in.vercel.app/transactions")
       .then((response) => response.json())
       .then((data) => setTransactionList(data))
       .catch((error) => console.error("Error fetching transactions:", error));
