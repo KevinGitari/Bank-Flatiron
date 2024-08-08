@@ -6,7 +6,7 @@ function TransactionForm({ onAddTransaction }) {
     const [description, setDescription] = useState("");
     const [category, setCategory] = useState("");
     const [amount, setAmount] = useState("");
-    const [date, setDate] = useState("");
+    const [date, setDate] = useState("2024-08-07");
 
     // Handle form submission
     const handleSubmit = (e) => {
