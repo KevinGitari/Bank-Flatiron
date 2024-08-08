@@ -6,6 +6,13 @@ function TransactionList() {
 
   useEffect(() => {
     fetch("http://json-server-in.vercel.app/transactions")
+       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
       .then((response) => response.json())
       .then((data) => setTransactionList(data))
       .catch((error) => console.error("Error fetching transactions:", error));
