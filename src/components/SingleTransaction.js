@@ -10,6 +10,7 @@ function SingleTransaction({ transaction }) {
       <td className="tableData">{transaction?.description}</td>
       <td className="tableData">{transaction?.category}</td>
       <td className="tableData">{transaction?.amount}</td>
+      <button className = "del" onClick = {()=>onDelete(transaction)}>Delete Transaction</button>
 
     </tr>
   );
