@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import SingleTransaction from "./SingleTransaction";
 
 function TransactionList() {
@@ -46,5 +45,6 @@ function TransactionList() {
 }
 
 export default TransactionList;
+
 
 
